@@ -39,13 +39,6 @@ dropoff_longitude = st.number_input('Dropoff Longitude')
 dropoff_latitude = st.number_input('Dropoff Latitude')
 passenger_count = st.number_input('Passenger Count', min_value=1, max_value=8)
 
-'''
-## Once we have these, let's call our API in order to retrieve a prediction
-
-See ? No need to load a `model.joblib` file in this app, we do not even need to know anything about Data Science in order to retrieve a prediction...
-
-🤔 How could we call our API ? Off course... The `requests` package 💡
-'''
 
 url = 'https://taxifare.lewagon.ai/predict'
 
