@@ -3,6 +3,15 @@ from datetime import datetime
 import requests
 import pytz
 
+# Function to load the CSS file
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+# Load the CSS file
+local_css("style.css")
+
+
 # Input fields
 local_tz = pytz.timezone('America/New_York')
 
