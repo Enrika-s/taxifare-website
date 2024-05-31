@@ -42,9 +42,22 @@ See ? No need to load a `model.joblib` file in this app, we do not even need to 
 
 url = 'https://taxifare.lewagon.ai/predict'
 
-if url == 'https://taxifare.lewagon.ai/predict':
+params = {
+    'pickup_datetime': pickup_datetime,
+    'pickup_longitude': pickup_longitude,
+    'pickup_latitude': pickup_latitude,
+    'dropoff_longitude': dropoff_longitude,
+    'dropoff_latitude': dropoff_latitude,
+    'passenger_count': passenger_count
+}
 
-    st.markdown('Maybe you want to use your own API for the prediction, not the one provided by Le Wagon...')
+if st.button('Get Fare Prediction'):
+    response = requests.get(url, params=params)
+    if response.status_code == 200:
+        prediction = response.json()['fare']
+        st.success(f'The predicter fare is ${prediction}')
+    else:
+        st.error('Error')
 
 '''
 
