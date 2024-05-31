@@ -1,0 +1,8 @@
+/* style.css */
+body {
+    background-color: #f0f0f0; /* light grey background color */
+    background-image: url('https://www.example.com/your-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
