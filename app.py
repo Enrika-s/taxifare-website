@@ -7,8 +7,7 @@ import pytz
 st.markdown(
     """
     <style>
-    body {
-        background-color: #f0f0f0;
+    .stApp {
         background-image: url('https://t4.ftcdn.net/jpg/04/14/29/73/360_F_414297303_srFo2L1U2cZ4Ano0eQr9Plbf9KYyH0u0.jpg');
         background-size: cover;
         background-repeat: no-repeat;
