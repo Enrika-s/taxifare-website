@@ -8,10 +8,12 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1791677b-5bf5-4fd7-8642-e17627638d62/dcqjiop-ba7d84ab-bb07-45b8-8cba-9f62e6e70fe1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE3OTE2NzdiLTViZjUtNGZkNy04NjQyLWUxNzYyNzYzOGQ2MlwvZGNxamlvcC1iYTdkODRhYi1iYjA3LTQ1YjgtOGNiYS05ZjYyZTZlNzBmZTEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pGku0NTCbcUNNAeDM6ki2kUKpkf5AiENiIAGHllzuqo');
-        background-size: 20%;
-        background-repeat: repeat;
-        background-attachment: fixed;
+        background-image: url('https://t4.ftcdn.net/jpg/04/14/29/73/360_F_414297303_srFo2L1U2cZ4Ano0eQr9Plbf9KYyH0u0.jpg');
+        background-size: contain;       /* Ensures the image is scaled to fit the container without cropping */
+        background-repeat: no-repeat;   /* Ensures the image is not repeated */
+        background-position: center bottom; /* Places the image at the center bottom */
+        background-color: rgba(240, 240, 240, 0.8); /* Light grey background color with some transparency */
+        background-blend-mode: lighten; /* Blends the background color with the image */
     }
     </style>
     """,
