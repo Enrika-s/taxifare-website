@@ -3,13 +3,21 @@ from datetime import datetime
 import requests
 import pytz
 
-# Function to load the CSS file
-def local_css(css):
-    with open(css) as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-
-# Load the CSS file
-local_css("style.css")
+# Inline CSS for background
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #f0f0f0;
+        background-image: url('https://www.example.com/your-image.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 
 # Input fields
