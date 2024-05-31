@@ -62,7 +62,7 @@ if st.button('Get Fare Prediction'):
     response = requests.get(url, params=params)
     if response.status_code == 200:
         prediction = response.json()['fare']
-        st.success(f'The predicter fare is ${prediction}')
+        st.success(f'The predicted fare is ${prediction:.2f}')
     else:
         st.error('Error')
 
