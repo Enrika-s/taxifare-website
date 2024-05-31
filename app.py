@@ -25,7 +25,9 @@ st.markdown('''
 ''')
 
 # Input fields
-pickup_datetime = st.text_input('Pickup Date and Time', '2024-05-31 19:18:00')
+current_datetime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+pickup_datetime = st.text_input('Pickup Date and Time', current_datetime)
 pickup_longitude = st.number_input('Pickup Longitude')
 pickup_latitude = st.number_input('Pickup Latitude')
 dropoff_longitude = st.number_input('Dropoff Longitude')
