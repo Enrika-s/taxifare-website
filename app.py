@@ -3,30 +3,6 @@ from datetime import datetime
 import requests
 import pytz
 
-'''
-# TaxiFareModel Frontend
-'''
-
-st.markdown('''
-Remember that there are several ways to output content into your web page...
-
-Either as with the title by just creating a string (or an f-string). Or as with this paragraph using the `st.` functions
-''')
-
-'''
-## Add ride parameters
-'''
-
-st.markdown('''
-1. Let's ask for:
-- Date and time
-- Pickup longitude
-- Pickup latitude
-- Dropoff longitude
-- Dropoff latitude
-- Passenger count
-''')
-
 # Input fields
 local_tz = pytz.timezone('America/New_York')
 
@@ -58,14 +34,3 @@ if st.button('Get Fare Prediction'):
         st.success(f'The predicted fare is ${prediction:.2f}')
     else:
         st.error('Error')
-
-'''
-
-2. Let's build a dictionary containing the parameters for our API...
-
-3. Let's call our API using the `requests` package...
-
-4. Let's retrieve the prediction from the **JSON** returned by the API...
-
-## Finally, we can display the prediction to the user
-'''
