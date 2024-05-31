@@ -4,18 +4,15 @@ import requests
 import pytz
 
 # Inline CSS for background
+# Inline CSS for background
 st.markdown(
     """
     <style>
     .stApp {
-        background-color: #f0f0f0; /* Light grey background color */
-    }
-    .bottom-image {
-        position: fixed;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100px; /* Adjust the width as needed */
+        background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1791677b-5bf5-4fd7-8642-e17627638d62/dcqjiop-ba7d84ab-bb07-45b8-8cba-9f62e6e70fe1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE3OTE2NzdiLTViZjUtNGZkNy04NjQyLWUxNzYyNzYzOGQ2MlwvZGNxamlvcC1iYTdkODRhYi1iYjA3LTQ1YjgtOGNiYS05ZjYyZTZlNzBmZTEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pGku0NTCbcUNNAeDM6ki2kUKpkf5AiENiIAGHllzuqo');
+        background-size: 25%;
+        background-repeat: repeat;
+        background-attachment: fixed;
     }
     </style>
     """,
