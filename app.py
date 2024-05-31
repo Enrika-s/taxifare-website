@@ -1,5 +1,6 @@
 import streamlit as st
 from datetime import datetime
+import pytz
 
 '''
 # TaxiFareModel Frontend
@@ -26,7 +27,9 @@ st.markdown('''
 ''')
 
 # Input fields
-current_datetime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+local_tz = pytz.timezone('America/New_York')
+
+current_datetime = datetime.now(local_tz).strftime('%Y-%m-%d %H:%M:%S')
 
 pickup_datetime = st.text_input('Pickup Date and Time', current_datetime)
 pickup_longitude = st.number_input('Pickup Longitude')
