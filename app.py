@@ -1,7 +1,7 @@
 import streamlit as st
 
 '''
-# TaxiFareModel front
+# TaxiFareModel Frontend
 '''
 
 st.markdown('''
@@ -11,18 +11,20 @@ Either as with the title by just creating a string (or an f-string). Or as with 
 ''')
 
 '''
-## Here we would like to add some controllers in order to ask the user to select the parameters of the ride
+## Add ride parameters
+'''
 
 st.markdown('''
 1. Let's ask for:
-- date and time
-- pickup longitude
-- pickup latitude
-- dropoff longitude
-- dropoff latitude
-- passenger count
+- Date and time
+- Pickup longitude
+- Pickup latitude
+- Dropoff longitude
+- Dropoff latitude
+- Passenger count
 ''')
 
+# Input fields
 pickup_datetime = st.text_input('Pickup Date and Time', '2014-07-06 19:18:00')
 pickup_longitude = st.number_input('Pickup Longitude', -73.950655)
 pickup_latitude = st.number_input('Pickup Latitude', 40.783282)
