@@ -9,10 +9,10 @@ local_tz = pytz.timezone('America/New_York')
 current_datetime = datetime.now(local_tz).strftime('%Y-%m-%d %H:%M:%S')
 
 pickup_datetime = st.text_input('Pickup Date and Time', current_datetime)
-pickup_longitude = st.number_input('Pickup Longitude')
-pickup_latitude = st.number_input('Pickup Latitude')
-dropoff_longitude = st.number_input('Dropoff Longitude')
-dropoff_latitude = st.number_input('Dropoff Latitude')
+pickup_longitude = st.number_input('Pickup Longitude', format="%.6f")
+pickup_latitude = st.number_input('Pickup Latitude', format="%.6f")
+dropoff_longitude = st.number_input('Dropoff Longitude', format="%.6f")
+dropoff_latitude = st.number_input('Dropoff Latitude', format="%.6f")
 passenger_count = st.number_input('Passenger Count', min_value=1, max_value=8)
 
 
