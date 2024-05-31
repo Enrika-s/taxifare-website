@@ -4,8 +4,8 @@ import requests
 import pytz
 
 # Function to load the CSS file
-def local_css(file_name):
-    with open(file_name) as f:
+def local_css(css):
+    with open(css) as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # Load the CSS file
