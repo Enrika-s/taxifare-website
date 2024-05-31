@@ -9,9 +9,12 @@ st.markdown(
     <style>
     .stApp {
         background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1791677b-5bf5-4fd7-8642-e17627638d62/dcqjiop-ba7d84ab-bb07-45b8-8cba-9f62e6e70fe1.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE3OTE2NzdiLTViZjUtNGZkNy04NjQyLWUxNzYyNzYzOGQ2MlwvZGNxamlvcC1iYTdkODRhYi1iYjA3LTQ1YjgtOGNiYS05ZjYyZTZlNzBmZTEuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.pGku0NTCbcUNNAeDM6ki2kUKpkf5AiENiIAGHllzuqo');
-        background-size: 20%;
-        background-repeat: repeat;
+        background-size: contain; /* Ensures the image is scaled to fit within the container */
+        background-repeat: no-repeat; /* Ensures the image is not repeated */
+        background-position: center bottom; /* Positions the image at the center bottom */
         background-attachment: fixed;
+        background-color: #f0f0f0; /* Fallback background color */
+        background-blend-mode: multiply; /* Blends the background color with the image */
     }
     </style>
     """,
